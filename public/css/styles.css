@@ -1,6 +1,12 @@
-body{
+html{
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
   font-size: 12px;
+  margin: 0;
+  background-color: #ebebeb;
 }
 
 footer, header{
@@ -19,16 +25,15 @@ footer, header{
   background-color: #1259c3;;
 }
 
-
 .dark-grey{
   color: #666;
 }
 
-.color-light-grey{
-  color: #ebebeb;
-}
-
-.color-green{
+.icon-truck{
+  border: solid #39d54a 1px;
+  border-radius: 50%;
+  font-size: 1.35rem;
+  padding: 0.5em;
   color: #39d54a
 }
 
@@ -51,19 +56,64 @@ footer, header{
   border-radius: 5px;
   text-align: center;
   font-size: 20px;
+  color: #ebebeb;
 }
 
 main section{
   margin-bottom: 30px;
 }
 
+article.product{
+  width: 90%;
+  margin: auto;
+  margin-bottom:10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.product-dates{
+  border-top: solid #ebebeb 1px;
+  padding: 15px;
+}
+
 footer article{
   text-align: center;
-  padding: 20px;
+  padding: 0px 20px;
 }
 
 footer article i.icon{
   font-size: 5em;
   margin-bottom: 10px;
   color: #1259c3;
+}
+
+header ul{
+  list-style: none;
+}
+
+.navbar, .login-navbar{
+  display: none;
+}
+
+@media (min-width: 481px){
+  /* tablet */
+  .navbar, .login-navbar {
+    display: block;
+  }
+  .burger-menu{
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  /* laptop */
+  article.product{
+    box-shadow: none;
+  }
+  .description{
+    display: none;
+  }
+}
+@media (min-width: 1281px){
+  /* desktop */
 }
