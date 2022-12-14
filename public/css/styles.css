@@ -6,6 +6,9 @@ html{
 body{
   font-size: 12px;
   margin: 0;
+}
+
+main{
   background-color: #ebebeb;
 }
 
@@ -29,12 +32,15 @@ footer, header{
   color: #666;
 }
 
+.color-green{
+  color: #39d54a;
+}
+
 .icon-truck{
   border: solid #39d54a 1px;
   border-radius: 50%;
   font-size: 1.35rem;
   padding: 0.5em;
-  color: #39d54a
 }
 
 .category-title{
@@ -91,13 +97,13 @@ header ul{
   list-style: none;
 }
 
-.navbar, .login-navbar{
+.header-navbar{
   display: none;
 }
 
 @media (min-width: 481px){
   /* tablet */
-  .navbar, .login-navbar {
+  .header-navbar {
     display: block;
   }
   .burger-menu{
