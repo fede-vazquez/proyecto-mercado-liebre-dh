@@ -3,21 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    
+    <title>Mercado Liebre</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&family=Zen+Dots&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Zen+Dots&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" href="/css/styles.css" />
-    <title>mercado liebre</title>
   </head>
 
   <body>
@@ -27,7 +22,7 @@
 
       <!-- barra de búsqueda -->
 
-      <form action="" class="search w-50 bg-white flex">
+      <form action="" class="search w-50 bg-white flex p-10 b-rad-10">
         <input type="search" placeholder="Buscar productos, marcas" class="b-none"/>
         <button class="b-none"><i class="fa-solid fa-magnifying-glass bg-white"></i></button>
       </form>
@@ -38,36 +33,36 @@
       </p>
 
       <!-- barra de navegación -->
-      <nav class="header-navbar w-100">
-        <ul class="navbar flex">
-          <li><a href="">Ofertas</a></li>
-          <li><a href="">Tiendas Oficiales</a></li>
-          <li><a href="">Vender</a></li>
-          <li><a href="">Ayuda</a></li>
+      <nav class="header-navbar w-100 hide">
+        <ul class="flex">
+          <li class="p-5"><a href="">Ofertas</a></li>
+          <li class="p-5"><a href="">Tiendas Oficiales</a></li>
+          <li class="p-5"><a href="">Vender</a></li>
+          <li class="p-5"><a href="">Ayuda</a></li>
         </ul>
 
         <!-- crear cuenta o iniciar sesion, carrito -->
-        <ul class="login-navbar flex">
-          <li>
-            <a href="#"
-              >Creá tu cuenta <i class="fa-sharp fa-solid fa-id-card"></i
-            ></a>
+        <ul class="flex">
+          <li class="p-5">
+            <a href="/register">
+              Creá tu cuenta<i class="fa-sharp fa-solid fa-id-card"></i>
+            </a>
           </li>
-          <li>
-            <a href="#"
-              >Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i
-            ></a>
+          <li class="p-5">
+            <a href="/login">
+              Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            </a>
           </li>
-          <li>
-            <a href="#"
-              >Mis compras <i class="fa-solid fa-basket-shopping"></i
-            ></a>
+          <li class="p-5">
+            <a href="#">
+              Mis compras <i class="fa-solid fa-basket-shopping"></i>
+            </a>
           </li>
         </ul>
       </nav>
 
       <!-- menú hamburguesa -->
-      <div class="burger-menu bg-light-blue center flex">
+      <div class="burger-menu bg-light-blue m-auto flex">
         <i class="fa-solid fa-bars"></i>
       </div>
     </header>
@@ -75,9 +70,9 @@
     <!-- banner -->
     <img src="/images/img-home-banner.jpg" width="100%" alt="" />
 
-    <main class="center">
+    <main class="m-auto">
       <!-- sección de articulos basados en al última visita del usuario -->
-      <h2 class="category-title">Basado en tu última visita</h2>
+      <h2 class="title">Basado en tu última visita</h2>
       <section class="product-list">
         <article class="product">
           <img src="/images/img-cafetera-moulinex.jpg" width="100%" alt="" />
@@ -129,20 +124,8 @@
       </section>
 
       <!-- sección de articulos en ofertas -->
-      <h2 class="category-title">Basado en Ofertas</h2>
+      <h2 class="title">Basado en Ofertas</h2>
       <section class="product-list">
-        <article class="product">
-          <img src="/images/img-cafetera-moulinex.jpg" width="100%" alt="" />
-          <div class="product-dates">
-            <i class="fa-solid fa-truck icon-truck color-green"></i>
-            <div class="price-discount flex">
-              <p class="font-prices">$6.770</p>
-              <p class="font-discounts color-green">40% off</p>
-            </div>
-            <h3 class="description font-description">Cafetera Moulinex</h3>
-          </div>
-        </article>
-
         <article class="product">
           <img src="/images/img-cafetera-moulinex.jpg" width="100%" alt="" />
           <div class="product-dates">
