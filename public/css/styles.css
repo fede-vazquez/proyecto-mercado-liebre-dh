@@ -9,6 +9,10 @@ html{
   font-size: 12px;
 }
 
+.p-relative{
+  position: relative;
+}
+
 a{
   text-decoration: none;
   color: #000000;
@@ -42,6 +46,10 @@ footer, header{
 
 .flex-wrap{
   flex-wrap: wrap;
+}
+
+.j-cont-c{
+  justify-content: center;
 }
 
 .max-w-700{
@@ -142,7 +150,6 @@ footer, header{
   border-radius: 5px;
   font-size: 30px;
   color: #ebebeb;
-  justify-content: center;
   align-items: center;
 }
 
@@ -176,7 +183,7 @@ footer article{
   padding: 0px 20px;
 }
 
-footer article i.icon{
+.footer-icon{
   font-size: 50px;
   margin-bottom: 10px;
   color: #1259c3;
@@ -192,9 +199,17 @@ footer article i.icon{
 }
 
 .form-buttons{
-  justify-content: center;
   gap: 40px;
 }
+
+.form-buttons button:hover{
+  background-color: #0022AA;
+}
+
+.product {
+  transition: all 0.5s;
+}
+
 
 /* original 481px */
 @media (min-width: 550px){
@@ -203,18 +218,22 @@ footer article i.icon{
     display: flex;
     justify-content: space-between;
   }
+
   .burger-menu{
     display: none;
   }
+
   section.product-list{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
   }
+
   article.product{
     width: 48%;
     margin: 1%;
   }
+
   .text-navbar, .search, .logo-navbar{
     width: 30%;
     margin: 0;
@@ -225,13 +244,51 @@ footer article i.icon{
   article.product{
     box-shadow: none;
   }
+
+  .icon-truck{
+    transition: all 1s;
+  }
+
   .description{
     display: none;
+    transition: all 1s;
   }
+
+  .product:hover .description{
+    display: block;
+  }
+
+  .product:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .product:hover .icon-truck{
+    /* animación y transición para hacer girar el icono. */
+    
+    /* transform: rotateZ(-360deg); */
+    animation: girar 1s linear infinite;
+  }
+
   article.product {
     width: 23%;
   }
 }
 @media (min-width: 1281px){
   /* desktop */
+  footer article{
+    width: 30%;
+  }
+  .footer-icon:hover{
+  color: #EAC926;
+}
+}
+
+@keyframes girar {
+  0%{
+    transform: rotateZ(0deg);
+  }
+
+  100%{
+    transform: rotateZ(-360deg);
+  }
 }
