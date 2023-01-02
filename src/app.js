@@ -3,7 +3,8 @@ const app = express();
 
 const path = require("path");
 
-app.listen(3000, () => console.log("servidor prendido en puerto 3000"));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`servidor prendido en puerto ${PORT}`));
 
 const publicPath = path.join(__dirname, "../public");
 app.use(express.static(publicPath));
