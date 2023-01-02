@@ -245,16 +245,18 @@ footer article{
   }
 
   .icon-truck{
-    transition: all 1s;
+    transition: all 2s;
   }
 
   .description{
-    display: none;
+    height: 0;
+    opacity: 0;
     transition: all 1s;
   }
 
   .product:hover .description{
-    display: block;
+    height: 100%;
+    opacity: 1;
   }
 
   .product:hover{
@@ -264,29 +266,30 @@ footer article{
   .product:hover .icon-truck{
     /* animación y transición para hacer girar el icono. */
     
-    /* transform: rotateZ(-360deg); */
-    animation: girar 1s linear infinite;
+    transform: rotateZ(-360deg);
+    /* animation: girar 1s linear infinite; */
   }
 
   article.product {
     width: 23%;
   }
 }
+
+/* desktop */
 @media (min-width: 1281px){
-  /* desktop */
   footer article{
     width: 30%;
   }
   .footer-icon:hover{
-  color: #EAC926;
-}
+    color: #EAC926;
+  }
 }
 
 @keyframes girar {
   0%{
     transform: rotateZ(0deg);
   }
-
+  
   100%{
     transform: rotateZ(-360deg);
   }
