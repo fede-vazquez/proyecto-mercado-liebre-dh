@@ -4,9 +4,10 @@
   padding: 0;
 }
 
+/* general config */
 html{
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .p-relative{
@@ -18,26 +19,52 @@ a{
   color: #000000;
 }
 
-.hide{
-  display: none;
-}
-
 body{
   background-color: #ebebeb;
 }
 
-main{
+.hide{
+  display: none;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.w-90{
   width: 90%;
 }
 
-footer, header{
-  padding: 1.5rem;
+.w-50{
+  width: 50%;
 }
 
-.main-header{
-  flex-wrap: wrap;
-  align-items: center;
+.max-w-700{
+  max-width: 700px;
+}
+
+.p-1{
+  padding: 1rem;
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-bet{
   justify-content: space-between;
+}
+
+.al-i-center{
+  align-items: center;
 }
 
 .flex{
@@ -48,42 +75,17 @@ footer, header{
   flex-wrap: wrap;
 }
 
-.j-cont-c{
-  justify-content: center;
-}
-
-.max-w-700{
-  max-width: 700px;
-}
-
-.w-50{
-  width: 50%;
-}
-
-.w-100{
-  width: 100%;
-}
-
 .m-auto{
   margin: auto;
 }
 
 .search{
   background-color: #ffffff;
-  height: 30px;
-  justify-content: space-between;
+  height: 40px;
 }
 
 .b-rad-10{
   border-radius: 10px;
-}
-
-.p-5{
-  padding: 5px;
-}
-
-.p-10{
-  padding: 10px;
 }
 
 .b-none{
@@ -109,7 +111,6 @@ footer, header{
 
 .icon-truck{
   font-size: 16px;
-  padding: 5px;
   width: 30px;
   height: 30px;
   border: 1px solid #39b54a;
@@ -129,7 +130,7 @@ footer, header{
 }
 
 .title{
-  font-size: 24px;
+  font-size: 2rem;
 }
 
 .font-prices{
@@ -184,7 +185,7 @@ footer article{
 }
 
 .footer-icon{
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: #1259c3;
 }
 
@@ -215,7 +216,6 @@ footer article{
   /* tablet */
   .header-navbar {
     display: flex;
-    justify-content: space-between;
   }
 
   .burger-menu{
@@ -265,7 +265,6 @@ footer article{
 
   .product:hover .icon-truck{
     /* animación y transición para hacer girar el icono. */
-    
     transform: rotateZ(-360deg);
     /* animation: girar 1s linear infinite; */
   }
@@ -273,13 +272,14 @@ footer article{
   article.product {
     width: 23%;
   }
-}
-
-/* desktop */
-@media (min-width: 1281px){
   footer article{
     width: 30%;
   }
+}
+
+@media (min-width: 1281px){
+/* desktop */
+
   .footer-icon:hover{
     color: #EAC926;
   }
